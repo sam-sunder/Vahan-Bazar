@@ -1,0 +1,13 @@
+import { useState, useEffect } from 'react'
+import './App.css'
+
+// --- Mock Data ---
+const brands = [
+  { name: 'Honda', logo: '/src/assets/img/logos/honda.png' },
+  { name: 'Bajaj', logo: '/src/assets/img/logos/bajaj.jpg' },
+  { name: 'Hero', logo: '/src/assets/img/logos/hero.png' },
+  { name: 'TVS', logo: '/src/assets/img/logos/tvs.jpg' },
+  { name: 'Ather', logo: '/src/assets/img/logos/ather.png' },
+  { name: 'Ola', logo: '/src/assets/img/logos/ola.webp' },
+  { name: 'Yamaha', logo: '/src/assets/img/logos/yamaha.jpg' }
+];

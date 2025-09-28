@@ -1,24 +1,44 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@theme {
+  --color-primary: #007BFF;
+  --color-primary-light: #3395FF;
+  --color-primary-dark: #0056B3;
+  --color-secondary: #9333ea;
+  --color-bg-dark: #0a0a1a;
+  --color-bg-light: #f9fafb;
+  --color-surface-dark: #14142b;
+  --color-surface-light: #ffffff;
+  --color-text-light: #e0e0e0;
+  --color-text-dark: #1f2937;
+  --color-text-muted: #888899;
+  --color-border-color: #2a2a4a;
+  --font-sans: "Inter", "sans-serif";
+  --font-sora: "Sora", "sans-serif";
+  --border-radius: 0.75rem;
+  --border-primary: var(--color-primary);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+@keyframes draw {
+  from {
+    stroke-dashoffset: 1;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }
 
-@keyframes logo-spin {
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes rotate {
   from {
     transform: rotate(0deg);
   }
@@ -27,16 +47,54 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+.animate-draw {
+  animation: draw 1.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.animate-shimmer {
+  animation: shimmer 3s linear infinite;
+  background-size: 200% auto;
+}
+
+.shiny-border {
+  position: relative;
+  isolation: isolate;
+}
+
+.shiny-border::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 16px;
+  padding: 4px;
+   background: linear-gradient(90deg, 
+    #9cfd14,
+    #2ec20c,
+    #0099ff,
+    #FF4F00
+  );
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  background-size: 400% 400%;
+  animation: shimmer 3s ease infinite;
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate-border {
+  to {
+    --angle: 360deg;
   }
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
