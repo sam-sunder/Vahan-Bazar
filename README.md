@@ -53,7 +53,7 @@ It connects buyers with dealers, offering powerful tools to discover, compare, a
 
 #### User Registration
 
-```http
+```
   POST /api/auth/register/
 ```
 
@@ -95,7 +95,7 @@ Creates a new user account. Can also be used to create a dealer account by setti
 
 #### User Login
 
-```http
+```
   POST /api/auth/login/
 ```
 
@@ -121,7 +121,7 @@ Authenticates a user and returns an access and refresh token.
 
 #### Get All Vehicles
 
-```http
+```
   GET /api/vehicles/
 ```
 
@@ -137,7 +137,7 @@ This endpoint retrieves a list of all available vehicles. It supports filtering.
 
 #### Get Vehicle Details
 
-```http
+```
   GET /api/vehicles/${id}/
 ```
 
@@ -147,7 +147,7 @@ This endpoint retrieves a list of all available vehicles. It supports filtering.
 
 #### Create Vehicle
 
-```http
+```
   POST /api/vehicles/
 ```
 
@@ -206,7 +206,7 @@ Creates a new vehicle. This endpoint is for `multipart/form-data`. The main data
 
 #### Update Vehicle
 
-```http
+```
   PUT /api/vehicles/${id}/
   PATCH /api/vehicles/${id}/
 ```
@@ -229,7 +229,7 @@ Updates an existing vehicle. The request format is the same as creating a vehicl
 
 #### Get Wishlist
 
-```http
+```
   GET /api/wishlist/
 ```
 
@@ -240,7 +240,7 @@ Retrieves the wishlist for the currently authenticated user.
 
 #### Add to Wishlist
 
-```http
+```
   POST /api/wishlist/
 ```
 
@@ -265,7 +265,7 @@ Adds a vehicle to the user's wishlist.
 
 #### Get User Bookings
 
-```http
+```
   GET /api/bookings/
 ```
 
@@ -276,7 +276,7 @@ Retrieves a list of bookings made by the authenticated user.
 
 #### Create a Booking
 
-```http
+```
   POST /api/bookings/
 ```
 
@@ -309,7 +309,7 @@ Creates a new booking for a test ride or a vehicle.
 
 #### Get Dealer Dashboard
 
-```http
+```
   GET /api/dealer/dashboard/
 ```
 
