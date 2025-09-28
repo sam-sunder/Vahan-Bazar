@@ -95,6 +95,20 @@ It connects buyers with dealers, offering powerful tools to discover, compare, a
   </tr>
   <tr>
     <td align="center">
+      <b>Dealer - Add Vehicle Details</b><br>
+      <img src="/screenshots/dealer_vehicle_add_details.png" height="200" />
+    </td>
+    <td align="center">
+      <b>Dealer - Add Vehicle Specs</b><br>
+      <img src="/screenshots/dealer_vehicle_add_specs.png" height="200" width="400"/>
+    </td>
+    <td align="center">
+      <b>Dealer - Add Vehicle Settings</b><br>
+      <img src="/screenshots/dealer_vehicle_add_settings.png" height="200" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
       <b>Customer - Used Vehicle Listings</b><br>
       <img src="/screenshots/customer_used_vehicles_list.png" height="200" />
     </td>
@@ -105,6 +119,20 @@ It connects buyers with dealers, offering powerful tools to discover, compare, a
     <td align="center">
       <b>Customer - Used Vehicle Detail</b><br>
       <img src="/screenshots/cutomer_used_vehicle_detail.png" height="200" width="400"/>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>Customer - Profile</b><br>
+      <img src="/screenshots/customer_profile.png" height="200" />
+    </td>
+    <td align="center">
+      <b>Customer - Favourites/Wishlist</b><br>
+      <img src="/screenshots/customer_wishlist.png" height="200" width="400"/>
+    </td>
+    <td align="center">
+      <b>Dealer - Dashboard</b><br>
+      <img src="/screenshots/dealer_dashboard.png" height="200" width="400"/>
     </td>
   </tr>
 </table>
