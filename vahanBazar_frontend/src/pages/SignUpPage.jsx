@@ -261,7 +261,7 @@ const SignUpPage = () => {
 
       <div className="hidden lg:!block lg:!w-1/2 relative">
         <div className="absolute inset-0 bg-black/60" />
-        <img src="/src/assets/img/hero_fallback.png" alt="Sign up background" className="w-full h-full object-cover" />
+        <img src="/public/assets/img/hero_fallback.png" alt="Sign up background" className="w-full h-full object-cover" />
         <div className="absolute top-0 inset-0 flex items-center justify-center p-16 text-white text-center">
           <div>
             <h2 className="text-4xl font-bold mb-4">Join the VahanBazar Community</h2>

@@ -117,7 +117,7 @@ const LoginPage = () => {
       <div className="hidden lg:!block lg:!w-1/2 relative">
         <div className="absolute inset-0 bg-black/60" />
         <img
-          src="/src/assets/img/hero_fallback.png"
+          src="/public/assets/img/hero_fallback.png"
           alt="Login background"
           className="w-full h-full object-cover"
         />

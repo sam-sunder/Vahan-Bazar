@@ -31,13 +31,13 @@ import './App.css'
 
 // --- Mock Data ---
 const brands = [
-  { name: 'Honda', logo: '/src/assets/img/logos/honda.png' },
-  { name: 'Bajaj', logo: '/src/assets/img/logos/bajaj.jpg' },
-  { name: 'Hero', logo: '/src/assets/img/logos/hero.png' },
-  { name: 'TVS', logo: '/src/assets/img/logos/tvs.jpg' },
-  { name: 'Ather', logo: '/src/assets/img/logos/ather.png' },
-  { name: 'Ola', logo: '/src/assets/img/logos/ola.webp' },
-  { name: 'Yamaha', logo: '/src/assets/img/logos/yamaha.jpg' },
+  { name: 'Honda', logo: '/public/assets/img/logos/honda.png' },
+  { name: 'Bajaj', logo: '/public/assets/img/logos/bajaj.jpg' },
+  { name: 'Hero', logo: '/public/assets/img/logos/hero.png' },
+  { name: 'TVS', logo: '/public/assets/img/logos/tvs.jpg' },
+  { name: 'Ather', logo: '/public/assets/img/logos/ather.png' },
+  { name: 'Ola', logo: '/public/assets/img/logos/ola.webp' },
+  { name: 'Yamaha', logo: '/public/assets/img/logos/yamaha.jpg' },
 ];
 
 const featuredVehicles = [
@@ -48,8 +48,8 @@ const featuredVehicles = [
 ];
 
 const upcomingLaunches = [
-  { id: 1, name: 'Quantum EV', brand: 'VahanBazar Motors', launch: 'August 2024', image: '/src/assets/img/quantum_ev.png' },
-  { id: 2, name: 'Himalayan 450', brand: 'Royal Enfield', launch: 'September 2024', image: '/src/assets/img/h_450.png' },
+  { id: 1, name: 'Quantum EV', brand: 'VahanBazar Motors', launch: 'August 2024', image: '/public/assets/img/quantum_ev.png' },
+  { id: 2, name: 'Himalayan 450', brand: 'Royal Enfield', launch: 'September 2024', image: '/public/assets/img/h_450.png' },
 ];
 
 const testimonials = [
@@ -152,10 +152,10 @@ const Hero = () => {
           muted
           playsInline
           className="w-full h-full object-cover -scale-x-100"
-          poster="/src/assets/img/hero_fallback.png"
+          poster="/public/assets/img/hero_fallback.png"
           style={{ clipPath: 'polygon(0 0, 100% 0, 100% 90%, 0 100%)' }}
         >
-          <source src="/src/assets/videos/hero_vid.mp4" type="video/mp4" />
+          <source src="/public/assets/videos/hero_vid.mp4" type="video/mp4" />
         </video>
         {/* Overlay */}
         <div 
